@@ -1,0 +1,1 @@
+Invoke-Sqlcmd  -InputFile "<%= file_name -%>" -ServerInstance "<%= node %>\<%= instance %>" -Database "<%= database %>" | ConvertTo-Csv -NoTypeInformation

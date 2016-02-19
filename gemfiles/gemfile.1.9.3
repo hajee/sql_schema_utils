@@ -1,0 +1,18 @@
+source 'https://rubygems.org'
+
+
+# gem 'rubocop', :github => 'bbatsov/rubocop',  :require => false
+# gem 'puppet-blacksmith'
+gem 'rake',    :require => false
+gem 'rspec-core', '3.1.7'
+gem 'puppet-lint'
+gem "rspec-puppet"
+gem 'rspec-system-puppet'
+gem 'puppetlabs_spec_helper'
+gem 'puppet-syntax'
+
+if puppetversion = ENV['PUPPET_GEM_VERSION']
+  gem 'puppet', puppetversion, :require => false
+else
+  gem 'puppet', :require => false
+end

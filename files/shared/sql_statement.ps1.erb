@@ -1,0 +1,2 @@
+$command = "<%= command -%>"
+Invoke-Sqlcmd  $command -ServerInstance "<%= node %>\<%= instance %>" -Database "<%= database %>" | ConvertTo-Csv -NoTypeInformation

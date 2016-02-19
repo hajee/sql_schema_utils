@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[schema_version]
+(  id                bigint                          CONSTRAINT nn_schema_version_id NOT NULL
+  ,application       VARCHAR(255)                   CONSTRAINT nn_schema_version_application NOT NULL
+  ,version           VARCHAR(255)                   CONSTRAINT nn_schema_version NOT NULL
+  ,description       VARCHAR(255)                   CONSTRAINT nn_schema_version_description NOT NULL
+  ,installation_time TIMESTAMP                    CONSTRAINT nn_schema_version_install_tijd NOT NULL
+) ON [PRIMARY]
+
