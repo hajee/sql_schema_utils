@@ -1,6 +1,6 @@
 {
   "name": "enterprisemodules-sql_schema_definition",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Bert Hajee, Enterprise Modules B.V.",
   "summary": "A custom type to manage a schema definition on a SQL server database",
   "license": "",
@@ -8,7 +8,7 @@
   "source": "https://github.com/enterprisemodules/sql_schema_definition",
   "description": "the custom types needed to manage the basic setup of SQL server database. ",
   "dependencies": [
-    {"name":"hajee/easy_type","version_requirement":"<= 0.15.5"}
+    {"name":"enterprisemodules/easy_type","version_requirement":"<= 2.0.6"}
   ],
   "operatingsystem_support": [
       {
